@@ -1,0 +1,899 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 7px;
+  text-decoration: none;
+  display: inline-block;
+  border: thin solid #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+/* ----------------start nav header--------------------- */
+
+#mainmenu {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+#mainmenu > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#mainmenu h4 > span {
+  color: #f2861c;
+}
+#mainmenu h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+#mainmenu label {
+  color: #f2861c;
+  border: 2px solid #f2861c;
+  display: inline-block;
+  padding: 0 5px 2px;
+  border-radius: 5px;
+}
+
+#menuControl {
+  display: none;
+}
+
+#menuControl + nav {
+  width: 100%;
+  display: none;
+}
+#menuControl:checked + nav {
+  display: block;
+}
+#mainmenu div > a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 35px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+}
+#mainmenu div > a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-bottom: 4px solid #f2861c;
+  border-radius: 25px;
+}
+/* #mainmenu div > a:active {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-bottom: 4px solid #f2861c;
+} */
+#mainmenu nav div > a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+/* ----------------end nav header--------------------- */
+
+/* ----------------start sec1--------------------- */
+#sec1 {
+  background: url(/images/Banner-bg.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+.sec_cover {
+  background-color: #cccccca7;
+  height: 130vh;
+}
+
+#sec1 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#sec1 article {
+  margin-top: 70px;
+  width: 90%;
+}
+
+#sec1 h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+#sec1 h2 + h2 {
+  color: #f2861c;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: -22px;
+  margin-bottom: 5px;
+}
+
+#sec1 p {
+  font-size: 0.8rem;
+  color: #fff;
+  font-style: oblique;
+}
+
+#sec1 figure {
+  background: url(/images/img1.jpg) no-repeat center center/cover;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  /* flex-wrap: wrap;*/
+  align-items: end;
+}
+
+#sec1 figcaption {
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+#sec1 figure figcaption p > i {
+  font-size: 0.9rem;
+  margin: 10px;
+}
+#sec1 figure figcaption p {
+  padding-right: 30px;
+  font-size: 1.5rem;
+}
+#sec1 figure figcaption .pp {
+  display: flex;
+}
+#sec1 figure figcaption i {
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #fff;
+  font-size: 1rem;
+}
+
+#sec1 figure figcaption h3 {
+  text-transform: uppercase;
+}
+#sec1 figure figcaption h4 {
+  color: #f2861c;
+  direction: rtl;
+  text-transform: capitalize;
+}
+/* ----------------end sec1--------------------- */
+
+/* ----------------start sec2------------------- */
+#sec2 {
+  text-align: center;
+}
+#sec2 > h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#sec2 > h2 + small {
+  font-size: 0.7rem;
+  color: #444549;
+  display: block;
+  margin: 0 auto;
+  width: 76%;
+}
+.v_line {
+  background-color: #f2861c;
+  height: 2px;
+  width: 200px;
+  margin: 30px auto;
+}
+div.btn_group {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+.btn_group button {
+  border: 1px solid #91949f;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  /* margin: 0 auto; */
+}
+/* .btn_group button:not(:last-child) {
+  border-right: none;
+} */
+
+/* Clear floats (clearfix hack) */
+.btn_group:after {
+  content: "";
+  clear: both;
+  /* display: table; */
+}
+.btn_group button.btn_light {
+  background-color: #fff;
+  color: #444549;
+}
+
+.btn_group button.btn_orange {
+  background-color: #f2861c;
+  color: #fff;
+}
+
+#sec2 figure > img {
+  border: 3px solid #fff;
+  outline: thin solid #dbdbe1;
+  scale: 0.8;
+}
+
+#sec2 figcaption h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#sec2 figcaption h5 {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #f2861c;
+  margin-bottom: 30px;
+}
+#sec2 figcaption {
+  text-align: justify;
+  padding: 30px;
+}
+#sec2 figcaption p {
+  font-size: 0.7rem;
+  color: #444549;
+  margin: 20px 0;
+}
+
+/* ----------------end sec2------------------- */
+
+/* ----------------start sec3------------------- */
+#sec3 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: url(/images/Services-bg.jpg) no-repeat center center/cover;
+  padding: 40px 10px;
+}
+#sec3 > h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#sec3 > h2 + small {
+  font-size: 0.7rem;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 76%;
+}
+
+#sec3 .img_card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.img_card p {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 100%;
+  padding-top: 70%;
+  text-align: center;
+}
+.img_card p:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.img1 {
+  background: url(/images/Development-cn.png) no-repeat 50% 5%,
+    url(/images/Development-bg.jpg) no-repeat center;
+
+  height: 300px;
+  width: 200px;
+  margin-top: 30px;
+}
+.img1:hover {
+  background: url(/images/Develop-hover-icn.png) no-repeat 50% 5%,
+    url(/images/Development-bg.jpg) no-repeat center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.img2 {
+  background: url(/images/desgin-icn.png) no-repeat 50% 5%,
+    url(/images/desgin-bg.jpg) no-repeat center;
+
+  height: 300px;
+  width: 200px;
+  margin-top: 30px;
+}
+.img2:hover {
+  background: url(/images/desgin-hover-icn.png) no-repeat 50% 5%,
+    url(/images/desgin-bg.jpg) no-repeat center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.img3 {
+  background: url(/images/concept-icn.png) no-repeat 50% 5%,
+    url(/images/concept-bg.jpg) no-repeat center;
+
+  height: 300px;
+  width: 200px;
+  margin-top: 30px;
+}
+.img3:hover {
+  background: url(/images/concept-hover-icn.png) no-repeat 50% 5%,
+    url(/images/concept-bg.jpg) no-repeat center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.img4 {
+  background: url(/images/systam-icn.png) no-repeat 50% 5%,
+    url(/images/systam-bg.jpg) no-repeat center;
+
+  height: 300px;
+  width: 200px;
+  margin-top: 30px;
+}
+.img4:hover {
+  background: url(/images/systam-hover-icn.png) no-repeat 50% 5%,
+    url(/images/systam-bg.jpg) no-repeat center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/*
+.img1,
+.img2,
+.img3,
+.img4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img1 {
+  background: url(/images/Development-bg.jpg) no-repeat center center/cover;
+  width: 200px;
+  height: 200px;
+} */
+/* ----------------end sec3------------------- */
+/* ----------------start sec4------------------- */
+#sec4 {
+  text-align: center;
+  /* background-color: #ececec; */
+  padding: 40px 10px;
+}
+#sec4 > h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#sec4 > h2 + small {
+  font-size: 0.7rem;
+  color: #444549;
+  display: block;
+  margin: 0 auto;
+  width: 76%;
+}
+
+/*------ start using ul>li from w3school------- */
+.prc_tbl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.columns {
+  width: 80%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #cccccc2f;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price .header {
+  background-color: #f2861c;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0;
+  border-bottom: none;
+}
+
+.price li {
+  border-bottom: 1px solid #ccccccad;
+
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* float: left; */
+  color: #2d2d2db1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price .grey1 {
+  background-color: #2d2d2d;
+  font-size: 3rem;
+  color: #f2861c;
+}
+.price .grey2 {
+  background-color: #2d2d2d;
+}
+
+.price a.button {
+  font-size: 2rem;
+  font-weight: 400;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.price .grey2:hover {
+  scale: 1.05;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+}
+/*------- end using ul>li from w3school ---------*/
+
+/* #sec4 nav > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#sec4 div > div {
+  padding: 13px 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  float: left;
+}
+#sec4 div > div::after {
+  clear: both;
+}
+#sec4 div > div.pric_orng {
+  background-color: #f2861c;
+  color: #000;
+  width: 30px;
+  font-size: 0.6rem;
+}
+#sec4 div > div.pric_total {
+  color: #f2861c;
+  background-color: #2d2d2d;
+  width: 90px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+#sec4 div > div.pric_detial {
+  background-color: #fff;
+  color: #2d2d2d;
+  width: 70px;
+  font-size: 0.7rem;
+  border-right: thin solid #91949f;
+}
+#sec4 div > div.pric_order {
+  background-color: #2d2d2d;
+  color: #fff;
+  width: 50px;
+  font-size: 0.6rem;
+} */
+
+/* ----------------end sec4------------------- */
+/* ----------------start sec5------------------- */
+#sec5 {
+  padding: 50px 10px 20px 10px;
+  text-align: center;
+  color: #fff;
+  background: url(/images/Services-bg.jpg) no-repeat center center/cover;
+}
+#sec5 > h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#sec5 > h2 + small {
+  font-size: 0.7rem;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 76%;
+}
+
+/* ----------------end sec5------------------- */
+/* ----------------start sec6------------------- */
+
+#sec6 {
+  background-color: #000;
+  color: #fff;
+}
+#sec6 form {
+  /* border: thin solid #4b5264; */
+  /* background-color: rgba(14, 18, 29, 0.5); */
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#sec6 form * {
+  width: 100%;
+  border-style: none;
+  outline-style: none;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+}
+#sec6 form input[type="button"] {
+  background-color: #f2861c;
+}
+#sec6 form input[type="button"]:hover {
+  box-shadow: 0 0 15px 0 rgba(242, 134, 28, 1);
+}
+#sec6 .conect {
+  padding: 0 30px;
+}
+#sec6 h2 {
+  color: #f2861c;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#sec6 .conect p {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+#sec6 .conect p > img {
+  margin-right: 15px;
+}
+
+#sec6 .soial {
+  text-align: center;
+  padding: 20px 0;
+}
+/* ----------------end sec6------------------- */
+/* ----------------start sec7------------------- */
+#sec7 {
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  color: #fff;
+  background: url(/images/Services-bg.jpg) no-repeat center center/cover;
+}
+#sec7 > h2 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #91949f;
+}
+/* ----------------end sec7------------------- */
+
+/* ------------------media----------------- */
+@media (min-width: 576px) {
+  .sec_cover {
+    height: 160vh;
+  }
+  #sec1 article {
+    width: 70%;
+  }
+  #sec2 {
+    margin-top: 40px;
+  }
+  #sec4 small {
+    width: 500px;
+  }
+  #sec5 small {
+    width: 500px;
+  }
+  #sec1 figure {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sec_cover {
+    height: 150vh;
+  }
+  #sec1 article {
+    width: 60%;
+  }
+  #sec2 {
+    margin-top: 40px;
+  }
+  #sec2 figcaption {
+    text-align: justify;
+    padding: 30px 100px;
+  }
+  #sec3 .img_card {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /*start update sec4 used idea from w3school  */
+  .columns {
+    width: 60%;
+    /* padding: 0; */
+  }
+  /*end update sec4 used idea from w3school  */
+  #sec6 .contenar_sec6 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #sec6 form {
+    padding: 45px;
+  }
+}
+/* -----------------min-width: 992px---------------------- */
+@media (min-width: 992px) {
+  /*start nav */
+  #mainmenu {
+    padding: 0 0;
+  }
+  #mainmenu label {
+    display: none;
+  }
+  #mainmenu div.container nav > div {
+    display: flex;
+    width: 35%;
+  }
+  #mainmenu h4 {
+    margin-left: 300px;
+  }
+  #menuControl + nav {
+    display: block;
+    width: 55%;
+  }
+  #mainmenu nav div > a {
+    padding: 14px 20px;
+  }
+
+  #mainmenu div > a {
+    margin-right: 0;
+  }
+  #mainmenu div > a:hover {
+    border-bottom: 4px solid #f2861c;
+    border-radius: 0;
+  }
+  /*end nav */
+
+  #sec1 figure {
+    margin-left: 2%;
+    width: 430px;
+    height: 400px;
+  }
+  .sec_cover {
+    height: 95vh;
+  }
+  #sec1 {
+    height: 85vh;
+  }
+  #sec1 .container {
+    flex-wrap: nowrap;
+    padding-top: 50px;
+  }
+  #sec1 figure {
+    margin-top: 70px;
+  }
+  #sec1 article {
+    width: 40%;
+    margin-top: 150px;
+  }
+  #sec1 h2 {
+    font-size: 2.5rem;
+  }
+  #sec1 h2 + h2 {
+    font-size: 2.2rem;
+    margin-top: -18px;
+  }
+  #sec1 figcaption {
+    padding: 5px;
+  }
+
+  #sec2 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  #sec2 figure {
+    display: flex;
+  }
+  #sec2 figcaption {
+    padding: 30px 10px;
+  }
+  #sec3 .img_card {
+    width: 90%;
+  }
+
+  #sec4 small {
+    width: 600px;
+  }
+  #sec4 div > div.pric_orng {
+    width: 50px;
+  }
+  #sec4 div > div.pric_total {
+    width: 110px;
+  }
+  #sec4 div > div.pric_detial {
+    width: 90px;
+  }
+  #sec4 div > div.pric_order {
+    width: 70px;
+  }
+  /*start update sec4 used idea from w3school  992px */
+  .columns {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .price {
+    display: flex;
+    justify-content: center;
+  }
+  /* .price ul li:nth-child(3)::after,
+  .price ul li:nth-child(4)::after,
+  .price ul li:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* transform: translateY(-50%); 
+    width: 10px;
+    height: 60px;
+    background-color: #d2d2d2;
+  } */
+
+  .price li {
+    padding: 10px;
+    /* position: relative; */
+
+    font-size: 0.8rem;
+    font-weight: 200;
+    width: 140px;
+  }
+
+  .price .grey1 {
+    background-color: #2d2d2d;
+    font-size: 3rem;
+    color: #f2861c;
+    width: 160px;
+  }
+  .price .grey2 {
+    background-color: #2d2d2d;
+  }
+
+  .price a.button {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .price .header {
+    font-size: 0.8rem;
+    width: 40px;
+  }
+
+  /*end update sec4 used idea from w3school  */
+  #sec5 small {
+    width: 600px;
+  }
+  #sec6 .contenar_sec6 {
+    width: 80%;
+    display: flex;
+  }
+  #sec6 .contenar_sec6 .conect {
+    margin-top: 50px;
+  }
+}
+/* ----------------------min-width: 1200px--------------------- */
+@media (min-width: 1200px) {
+  #sec1 figure {
+    margin-top: 90px;
+  }
+  .sec_cover {
+    height: 95vh;
+  }
+  #sec1 {
+    height: 85vh;
+  }
+  #sec2 {
+    width: 70%;
+    margin: 35px auto;
+  }
+  #sec3 .img_card {
+    width: 80%;
+  }
+  #sec4 small {
+    width: 750px;
+  }
+  #sec4 div > div.pric_orng {
+    width: 70px;
+    font-size: 0.8rem;
+  }
+  #sec4 div > div.pric_total {
+    width: 130px;
+  }
+  #sec4 div > div.pric_detial {
+    width: 110px;
+  }
+  #sec4 div > div.pric_order {
+    width: 90px;
+  }
+
+  #sec5 small {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #sec1 figure {
+    width: 450px;
+    height: 450px;
+  }
+  /* .sec_cover {
+    height: 86vh;
+  }
+  #sec1 {
+    height: 75vh;
+  } */
+  #sec1 figure {
+    margin-top: 120px;
+  }
+  #sec1 article {
+    margin-top: 200px;
+    padding-right: 50px;
+  }
+  #sec3 .img_card {
+    width: 70%;
+  }
+  #sec4 small {
+    width: 850px;
+  }
+  #sec4 div > div.pric_orng {
+    width: 90px;
+  }
+  #sec4 div > div.pric_total {
+    width: 150px;
+  }
+  #sec4 div > div.pric_detial {
+    width: 130px;
+  }
+  #sec4 div > div.pric_order {
+    width: 110px;
+  }
+  #sec5 small {
+    width: 850px;
+  }
+}
