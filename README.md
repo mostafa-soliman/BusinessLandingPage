@@ -1,7 +1,7 @@
 # BusinessLandingPage
 
 ## Live Demo
-[BusinessLandingPage Live Demo](https://task6-mu.vercel.app/)
+[Live Demo BusinessLandingPage](https://task6-mu.vercel.app/)
 
 ## Description
 This is a creative agency website featuring a clean and modern design.
